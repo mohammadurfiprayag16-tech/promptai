@@ -1,0 +1,3 @@
+const end=Date.now()+86400000;setInterval(()=>{let d=end-Date.now();if(d<0)d=0;let h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);count.textContent=`Offer ends in ${h}h ${m}m ${s}s`;},1000);
+function saveEmail(e){e.preventDefault();localStorage.setItem('email',email.value);pw.style.display='block';return false;}
+function unlock(){if(pass.value==='1234'){prompt.style.display='block';}else alert('Wrong password');}
